@@ -13,3 +13,15 @@ variable "environment" {
 variable "vpc_tags" {
     default = {}
 }
+
+variable "public_subnet_cidrs" {
+    type = list
+}
+
+variable "private_subnet_cidrs" {
+    type = list
+}
+
+variable "database_subnet_cidrs" {
+    type = list
+}
